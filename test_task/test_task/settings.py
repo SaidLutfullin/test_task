@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-from .config_file import (SECRET_KEY, TELEGRAM_BOT_TOKEN)
+from .config_file import (SECRET_KEY, TELEGRAM_BOT_TOKEN, ALLOWED_HOSTS)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,7 @@ TELEGRAM_BOT_TOKEN = TELEGRAM_BOT_TOKEN
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ALLOWED_HOSTS
 
 # Application definition
 INSTALLED_APPS = [
